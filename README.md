@@ -123,7 +123,7 @@ curl -X POST -H "Content-Type: application/vnd.kafka.json.v2+json" \
 ```
 
 - **4/ Create CURL consumer #1**
-It creates consumer instance and subscribe topic `jsontest`.
+- It creates consumer instance and subscribe topic `jsontest`.
 Kafka REST 1 port: `18082`
 
 ```bash
@@ -143,7 +143,7 @@ curl -X POST -H "Content-Type: application/vnd.kafka.v2+json" \
 ```
 
 - **5/ Consumer #1 reads records**
-It consumes from Kafka REST 1 port `18082`
+- It consumes from Kafka REST 1 port `18082`
 
 ```bash
 # consume 1
@@ -167,10 +167,10 @@ curl -X GET -H "Accept: application/vnd.kafka.json.v2+json" \
 ```
 
 - What do you think is it ok that consumer reads multiple partitions at once?
-if when we use `"auto.commit.enable": "false"`. Seems it could be the issue.
+when we use `"auto.commit.enable": "false"`. Seems it could be the issue.
 
 - **6/ Create CURL consumer #2**
-It creates consumer instance and subscribe topic `jsontest`.
+- It creates consumer instance and subscribe topic `jsontest`.
 Kafka REST 2 port: `28082`
 
 ```bash
