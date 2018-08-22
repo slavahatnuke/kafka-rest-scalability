@@ -1,4 +1,5 @@
-## kafka-rest-scalability
+## KAFKA REST Proxy scalability issues
+
 Cases describe issues related to `"auto.commit.enable": "false"` and scalability.
 
 ### Case #1
