@@ -170,7 +170,7 @@ curl -X GET -H "Accept: application/vnd.kafka.json.v2+json" \
 - What do you think is it ok that consumer reads multiple partitions at once?
 when we use `"auto.commit.enable": "false"`. Seems it could be the issue.
 
-- **6/ Create CURL consumer #2**
+- **6/ Create CURL consumer 2**
 - It creates consumer instance and subscribe topic `jsontest`.
 Kafka REST 2 port: `28082`
 
@@ -189,7 +189,7 @@ curl -X POST -H "Content-Type: application/vnd.kafka.v2+json" \
  http://localhost:28082/consumers/my_json_consumer/instances/my_consumer_instance_2/subscription
 ```
 
-- **7/ Consumer #2 DOES NOT read records**
+- **7/ Consumer 2 DOES NOT read records**
 - It just hung and does not give any answer for long time (~5 mins).
 - It seems like the `first` kafka instance locked (assigned) all topic partitions and `second` one waits.
 - There is a problem with scalability, if we have multiple Kakfa REST proxies it does not bring value.
@@ -203,8 +203,8 @@ curl -X GET -H "Accept: application/vnd.kafka.json.v2+json" \
 
 - **Opinion**
 - I guess it could be wrong `kafka + kafka rest` configuration from my side that leads to behaviour described before.
-- From my observations KAFKA Rest `consumer instance #1` reads records / messages from multiple partitions, it means that simple consumers (kafka clients) "take" partitions and the second `consumer instance #2` does not have ability read messages because all partitions are "busy".
-- When I delete `consumer instance #1` second consumer `consumer instance #2` works as expected.
+- From my observations KAFKA Rest `consumer instance 1` reads records / messages from multiple partitions, it means that simple consumers (kafka clients) "take" partitions and the second `consumer instance 2` does not have ability read messages because all partitions are "busy".
+- When I delete `consumer instance 1` second consumer `consumer instance 2` works as expected.
 
 - **Questions**
 - If I am wrong with `kafka or/and kafka rest` configuration could you suggest or correct this one to fix the issue?
