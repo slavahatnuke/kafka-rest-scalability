@@ -38,7 +38,7 @@
 ```
 
 #### Steps:
-- 1/ Start services
+- **1/ Start services**
 
 *docker-compose.yml*
 ```yml
@@ -103,3 +103,5 @@ services:
 ```
 
 `docker-compose up`
+
+- **2/ Create topic with partitions**
