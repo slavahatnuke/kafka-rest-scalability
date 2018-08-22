@@ -2,12 +2,12 @@
 
 Cases describe issues related to `"auto.commit.enable": "false"` and scalability.
 
-### Case #1
+### Case 1
 
 `First` KAFKA REST Proxy 1 locks `Second` KAFKA REST Proxy 2.
 
 - Screencast to reproduce a case [YouTube](https://youtu.be/jj2__LIgAKE)
-- Source code for [case #1](https://github.com/slavahatnuke/kafka-rest-scalability/tree/master/case1)
+- Source code for [case 1](https://github.com/slavahatnuke/kafka-rest-scalability/tree/master/case1)
 
 ```
                             +---------------------+
@@ -123,7 +123,7 @@ curl -X POST -H "Content-Type: application/vnd.kafka.json.v2+json" \
       "http://localhost:18082/topics/jsontest"
 ```
 
-- **4/ Create CURL consumer #1**
+- **4/ Create CURL consumer 1**
 - It creates consumer instance and subscribe topic `jsontest`.
 Kafka REST 1 port: `18082`
 
@@ -143,7 +143,7 @@ curl -X POST -H "Content-Type: application/vnd.kafka.v2+json" \
 
 ```
 
-- **5/ Consumer #1 reads records**
+- **5/ Consumer 1 reads records**
 - It consumes from Kafka REST 1 port `18082`
 
 ```bash
