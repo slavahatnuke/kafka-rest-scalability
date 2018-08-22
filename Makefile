@@ -22,7 +22,7 @@ remove:
 	docker volume prune -f
 
 
-stats:
+docker.stats:
 	docker stats
 
 ps:
