@@ -84,7 +84,6 @@ services:
       KAFKA_REST_BOOTSTRAP_SERVERS: 'kafka:9092'
       KAFKA_REST_LISTENERS: "http://0.0.0.0:8082"
       KAFKA_REST_PRODUCER_THREADS: "10"
-      ## KAFKA_REST_CONSUMER_THREADS: "10" ## does not work too
 
 
   kafka-rest-2:
@@ -101,7 +100,6 @@ services:
       KAFKA_REST_BOOTSTRAP_SERVERS: 'kafka:9092'
       KAFKA_REST_LISTENERS: "http://0.0.0.0:8082"
       KAFKA_REST_PRODUCER_THREADS: "10"
-      ## KAFKA_REST_CONSUMER_THREADS: "10" ## does not work too
 ```
 
 - Start services.
