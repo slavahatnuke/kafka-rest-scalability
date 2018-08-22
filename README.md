@@ -6,6 +6,9 @@ Cases describe issues related to `"auto.commit.enable": "false"` and scalability
 
 `First` KAFKA REST Proxy 1 locks `Second` KAFKA REST Proxy 2.
 
+- Screencast to reproduce a case [YouTube](https://youtu.be/jj2__LIgAKE)
+- Source code for [case #1](https://github.com/slavahatnuke/kafka-rest-scalability/tree/master/case1)
+
 ```
                             +---------------------+
                             |  CURL produce       |
