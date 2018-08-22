@@ -206,7 +206,7 @@ curl -X GET -H "Accept: application/vnd.kafka.json.v2+json" \
 - When I delete `consumer instance #1` second consumer `consumer instance #2` works as expected.
 
 - **Questions**
-- If I am wrong with `kafka or/and kafka rest` configuration could you suggest or correct one to fix the issue?
-- If it's the issue: What information can I add to easily reproduce a case?
+- If I am wrong with `kafka or/and kafka rest` configuration could you suggest or correct this one to fix the issue?
+- If it's the issue: What information can I add to easily reproduce a case or help?
 
 
