@@ -1,5 +1,5 @@
 ## kafka-rest-scalability
-Cases describe issues related to `"auto.commit.enable": "false"`.
+Cases describe issues related to `"auto.commit.enable": "false"` and scalability.
 
 ### Case #1
 
