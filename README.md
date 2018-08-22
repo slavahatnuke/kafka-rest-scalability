@@ -112,7 +112,7 @@ services:
 - describe to be sure: `docker-compose exec kafka bash -c "kafka-topics --zookeeper zookeeper:2181 --topic jsontest --describe"`
 
 
-- **3/ produce records***
+- **3/ produce records**
 - 10 simple records: produce 10 records: {v: 0} ... {v: 9}
 - KAFKA REST `First` port `18082`
 ```bash
