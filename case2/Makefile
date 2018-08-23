@@ -11,7 +11,7 @@ console:
 	docker-compose exec kafka bash
 
 topic:
-	docker-compose exec kafka bash -c "kafka-topics --zookeeper zookeeper:2181 --topic jsontest --create --partitions 10 --replication-factor 1"
+	docker-compose exec kafka bash -c "kafka-topics --zookeeper zookeeper:2181 --topic jsontest --create --partitions 2 --replication-factor 1"
 
 topic.describe:
 	docker-compose exec kafka bash -c "kafka-topics --zookeeper zookeeper:2181 --topic jsontest --describe"
